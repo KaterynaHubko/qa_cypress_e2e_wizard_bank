@@ -46,7 +46,7 @@ describe('Bank app', () => {
       .contains('strong', balance)
       .should('be.visible');
 
-    // Step 7: Withdrawal
+    // Step 7: Withdrawal.
     cy.get('[ng-click="withdrawl()"]').click();
     cy.contains('[type="submit"]', 'Withdraw').should('be.visible');
     cy.get('input[type="number"]').type(withdrawHermiona);
